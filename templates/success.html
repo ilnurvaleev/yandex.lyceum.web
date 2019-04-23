@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if username in session %}
+<form method="post">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+          <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="logout">{{username}}</button>-->
+        <button class="btn" type="submit" name="logout">{{username}}</button>
+        <!--<a href="main_page"><button class="btn btn-outline-success my-2 my-sm-0" type="submit_1" name="submit_1">Map</button></a>-->
+          <a class="btn" href="/main_page">Map</a>
+    </nav>
+    <h1>Success</h1>
+        <div class="form-group">
+          <label for="exampleInputName1">Your email</label>
+          <input type="mail" name="mail" class="form-control" id="exampleInputName2">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName1">Name of area</label>
+          <input type="head" name="head" class="form-control" id="exampleInputName1">
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Json</label>
+            <textarea class="form-control" type="text" name="text" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endif %}
+
+
+
+{% endblock %}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" contrut="width=device-width,
+    initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <title>Main page</title>
+</head>
+
+<style type="text/css">
+   body { margin: 0;
+}
+   #sidebar, #content { position: absolute; }
+   #sidebar, #content { overflow: auto; padding: 10px; }
+   #header {
+    height: 80px; /* Высота слоя */
+    background: #FEDFC0; border-bottom: 2px solid #7B5427;
+   }
+   #header h1 { padding: 20px; margin: 0; }
+   #sidebar {
+    width: 150px; background: #ECF5E4; border-right: 1px solid #231F20;
+    top: 82px; /* Расстояние от верхнего края */
+    bottom: 0; /* Расстояние снизу  */
+   }
+   #content {
+    top: 82px; /* Расстояние от верхнего края */
+    left: 100px; /* Расстояние от левого края */
+    bottom: 0; right: 0;
+   }
+
+  </style>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="log">Login</button>-->
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href = '/login'">Login</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href = '/success'">Submit polygon</button>
+    </nav>
+	<div id="content"><iframe src="inno" width="1000" height="500" aling="left"></iframe></div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_46fe88132f94457da950085a0472fb0e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_46fe88132f94457da950085a0472fb0e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_46fe88132f94457da950085a0472fb0e = L.map(
+        'map_46fe88132f94457da950085a0472fb0e', {
+        center: [55.74759843942743, 48.742733001708984],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_ce09a7dd558146328452b9da624fa184 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_46fe88132f94457da950085a0472fb0e);
+    
+            geo_json_2f88ae9da4c349c88bfc7cdc1f470544_onEachFeature = function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseout: function(e) {
+                        e.target.setStyle(e.target.feature.properties.style);},
+                    mouseover: function(e) {
+                        e.target.setStyle(e.target.feature.properties.highlight);},
+                    click: function(e) {
+                        map_46fe88132f94457da950085a0472fb0e.fitBounds(e.target.getBounds());}
+                });
+            };
+        var geo_json_2f88ae9da4c349c88bfc7cdc1f470544 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[48.74530792236328, 55.74712742473006], [48.747217655181885, 55.7474776669702], [48.747754096984856, 55.74839552826892], [48.74700307846069, 55.74892691178263], [48.74638080596924, 55.74891483496499], [48.746187686920166, 55.748323066319884], [48.745243549346924, 55.747441435160106], [48.74530792236328, 55.74712742473006]]], "type": "Polygon"}, "properties": {"fill": "#bff500", "fill-opacity": 0.5, "highlight": {"fillOpacity": 0.2, "opacity": 1}, "inf": "", "name": "Lyceum Innopolis", "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"fillColor": "#bff500", "fillOpacity": 0.5, "opacity": 0.8}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+                smoothFactor: 0,
+                onEachFeature: geo_json_2f88ae9da4c349c88bfc7cdc1f470544_onEachFeature,
+            }
+        ).addTo(map_46fe88132f94457da950085a0472fb0e );
+        geo_json_2f88ae9da4c349c88bfc7cdc1f470544.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_cca76eab850648b19f0e75f35975cad1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_149bc93acd2b4f958c201e362cdb406d = $(`<div id="html_149bc93acd2b4f958c201e362cdb406d" style="width: 100.0%; height: 100.0%;"><h5>Lyceum Innopolis</h5><b></b></div>`)[0];
+                popup_cca76eab850648b19f0e75f35975cad1.setContent(html_149bc93acd2b4f958c201e362cdb406d);
+            
+
+            geo_json_2f88ae9da4c349c88bfc7cdc1f470544.bindPopup(popup_cca76eab850648b19f0e75f35975cad1)
+            ;
+
+            
+        
+    
+            geo_json_1485a249a43c4761890276e6f35b2bbf_onEachFeature = function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseout: function(e) {
+                        e.target.setStyle(e.target.feature.properties.style);},
+                    mouseover: function(e) {
+                        e.target.setStyle(e.target.feature.properties.highlight);},
+                    click: function(e) {
+                        map_46fe88132f94457da950085a0472fb0e.fitBounds(e.target.getBounds());}
+                });
+            };
+        var geo_json_1485a249a43c4761890276e6f35b2bbf = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[48.746209144592285, 55.74883029713668], [48.7427544593811, 55.749760203172876], [48.74054431915283, 55.74765882551586], [48.743934631347656, 55.74645108598915], [48.746209144592285, 55.74883029713668]]], "type": "Polygon"}, "properties": {"fill": "#219fce", "fill-opacity": 0.5, "highlight": {"fillOpacity": 0.2, "opacity": 1}, "inf": "", "name": "Home", "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"fillColor": "#219fce", "fillOpacity": 0.5, "opacity": 0.8}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+                smoothFactor: 0,
+                onEachFeature: geo_json_1485a249a43c4761890276e6f35b2bbf_onEachFeature,
+            }
+        ).addTo(map_46fe88132f94457da950085a0472fb0e );
+        geo_json_1485a249a43c4761890276e6f35b2bbf.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_90bf2bed42e44b15a6d9c98d3e440bc0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_04c10030d4604a93aef9f6cb0b225d3b = $(`<div id="html_04c10030d4604a93aef9f6cb0b225d3b" style="width: 100.0%; height: 100.0%;"><h5>Home</h5><b></b></div>`)[0];
+                popup_90bf2bed42e44b15a6d9c98d3e440bc0.setContent(html_04c10030d4604a93aef9f6cb0b225d3b);
+            
+
+            geo_json_1485a249a43c4761890276e6f35b2bbf.bindPopup(popup_90bf2bed42e44b15a6d9c98d3e440bc0)
+            ;
+
+            
+        
+    
+            geo_json_a55686bc060f4bfaa4ce38aacb62c3f4_onEachFeature = function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseout: function(e) {
+                        e.target.setStyle(e.target.feature.properties.style);},
+                    mouseover: function(e) {
+                        e.target.setStyle(e.target.feature.properties.highlight);},
+                    click: function(e) {
+                        map_46fe88132f94457da950085a0472fb0e.fitBounds(e.target.getBounds());}
+                });
+            };
+        var geo_json_a55686bc060f4bfaa4ce38aacb62c3f4 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[48.73940706253052, 55.75345545484733], [48.7443208694458, 55.7525014854839], [48.74556541442871, 55.75417997295249], [48.74002933502197, 55.755411622846104], [48.73940706253052, 55.75345545484733]]], "type": "Polygon"}, "properties": {"fill": "#4ae012", "fill-opacity": 0.5, "highlight": {"fillOpacity": 0.2, "opacity": 1}, "inf": "", "name": "", "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"fillColor": "#4ae012", "fillOpacity": 0.5, "opacity": 0.8}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+                smoothFactor: 0,
+                onEachFeature: geo_json_a55686bc060f4bfaa4ce38aacb62c3f4_onEachFeature,
+            }
+        ).addTo(map_46fe88132f94457da950085a0472fb0e );
+        geo_json_a55686bc060f4bfaa4ce38aacb62c3f4.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_e33b5929a20c437cbdf119d426f28549 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_300e83d7c49a4c1f9c19b8aaecac2edf = $(`<div id="html_300e83d7c49a4c1f9c19b8aaecac2edf" style="width: 100.0%; height: 100.0%;"><h5></h5><b></b></div>`)[0];
+                popup_e33b5929a20c437cbdf119d426f28549.setContent(html_300e83d7c49a4c1f9c19b8aaecac2edf);
+            
+
+            geo_json_a55686bc060f4bfaa4ce38aacb62c3f4.bindPopup(popup_e33b5929a20c437cbdf119d426f28549)
+            ;
+
+            
+        
+    
+            geo_json_c3c843a5f6c04f91a2ba2cba9ff65310_onEachFeature = function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseout: function(e) {
+                        e.target.setStyle(e.target.feature.properties.style);},
+                    mouseover: function(e) {
+                        e.target.setStyle(e.target.feature.properties.highlight);},
+                    click: function(e) {
+                        map_46fe88132f94457da950085a0472fb0e.fitBounds(e.target.getBounds());}
+                });
+            };
+        var geo_json_c3c843a5f6c04f91a2ba2cba9ff65310 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[48.7499213218689, 55.75108256384377], [48.75381588935851, 55.75049686624561], [48.754309415817254, 55.750665934496354], [48.75466346740723, 55.75296639751851], [48.752206563949585, 55.753069039688526], [48.75175595283508, 55.7530207375245], [48.75136971473693, 55.752899981852806], [48.751037120819085, 55.75272488546484], [48.75069379806518, 55.752465258339406], [48.7499213218689, 55.75108256384377]]], "type": "Polygon"}, "properties": {"fill": "#e19d1c", "fill-opacity": 0.5, "highlight": {"fillOpacity": 0.2, "opacity": 1}, "inf": "", "name": "tech park", "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"fillColor": "#e19d1c", "fillOpacity": 0.5, "opacity": 0.8}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+                smoothFactor: 0,
+                onEachFeature: geo_json_c3c843a5f6c04f91a2ba2cba9ff65310_onEachFeature,
+            }
+        ).addTo(map_46fe88132f94457da950085a0472fb0e );
+        geo_json_c3c843a5f6c04f91a2ba2cba9ff65310.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_2643aebcb697480e9a881e490cf51149 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_416aac3d2db440148e48f9205eb6d6c9 = $(`<div id="html_416aac3d2db440148e48f9205eb6d6c9" style="width: 100.0%; height: 100.0%;"><h5>tech park</h5><b></b></div>`)[0];
+                popup_2643aebcb697480e9a881e490cf51149.setContent(html_416aac3d2db440148e48f9205eb6d6c9);
+            
+
+            geo_json_c3c843a5f6c04f91a2ba2cba9ff65310.bindPopup(popup_2643aebcb697480e9a881e490cf51149)
+            ;
+
+            
+        
+    
+            geo_json_ee76f76d9c0543a98cd13892ac401cb4_onEachFeature = function onEachFeature(feature, layer) {
+                layer.on({
+                    mouseout: function(e) {
+                        e.target.setStyle(e.target.feature.properties.style);},
+                    mouseover: function(e) {
+                        e.target.setStyle(e.target.feature.properties.highlight);},
+                    click: function(e) {
+                        map_46fe88132f94457da950085a0472fb0e.fitBounds(e.target.getBounds());}
+                });
+            };
+        var geo_json_ee76f76d9c0543a98cd13892ac401cb4 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[48.74237895011902, 55.752320349424956], [48.74112367630005, 55.75097387835602], [48.74037265777588, 55.7497903945558], [48.74158501625061, 55.749452249732535], [48.742711544036865, 55.75059951491381], [48.74367713928223, 55.75169844255453], [48.74328017234802, 55.752096947127185], [48.74237895011902, 55.752320349424956]]], "type": "Polygon"}, "properties": {"fill": "#ad20e0", "fill-opacity": 0.5, "highlight": {"fillOpacity": 0.2, "opacity": 1}, "inf": "", "name": "sport", "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"fillColor": "#ad20e0", "fillOpacity": 0.5, "opacity": 0.8}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+                smoothFactor: 0,
+                onEachFeature: geo_json_ee76f76d9c0543a98cd13892ac401cb4_onEachFeature,
+            }
+        ).addTo(map_46fe88132f94457da950085a0472fb0e );
+        geo_json_ee76f76d9c0543a98cd13892ac401cb4.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_22cfc923bf09464481f760bdda7cc6aa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b7a52fda3416491ca208cb9f679b5922 = $(`<div id="html_b7a52fda3416491ca208cb9f679b5922" style="width: 100.0%; height: 100.0%;"><h5>sport</h5><b></b></div>`)[0];
+                popup_22cfc923bf09464481f760bdda7cc6aa.setContent(html_b7a52fda3416491ca208cb9f679b5922);
+            
+
+            geo_json_ee76f76d9c0543a98cd13892ac401cb4.bindPopup(popup_22cfc923bf09464481f760bdda7cc6aa)
+            ;
+
+            
+        
+    
+            var layer_control_fed396131abe425bb5b4dca4298882a1 = {
+                base_layers : { "openstreetmap" : tile_layer_ce09a7dd558146328452b9da624fa184, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_fed396131abe425bb5b4dca4298882a1.base_layers,
+                layer_control_fed396131abe425bb5b4dca4298882a1.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_46fe88132f94457da950085a0472fb0e);
+            
+        
+</script>
