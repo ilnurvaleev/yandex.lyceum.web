@@ -27,7 +27,7 @@ wr_ses = []
 ################################################################################################
 
 
-def kek_lol(data):
+def maker_map(data):
     def party_color(feature):
         return {
             "fillColor": feature['properties']['fill'],
@@ -213,7 +213,7 @@ def success():
             a = str(request.form['head'])
             b = str(request.form['text'])
             if a != '':
-                kek_lol(b)
+                maker_map(b)
                 my_file = open('{}'.format(a), 'w')
                 my_file.write(b)
                 my_file.close()
